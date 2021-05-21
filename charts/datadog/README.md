@@ -534,6 +534,7 @@ helm install --name <RELEASE_NAME> \
 | datadog.systemProbe.enableOOMKill | bool | `false` | Enable the OOM kill eBPF-based check |
 | datadog.systemProbe.enableRuntimeCompiler | bool | `false` | Enable runtime compilation of eBPF programs in the system probe |
 | datadog.systemProbe.enableTCPQueueLength | bool | `false` | Enable the TCP queue length eBPF-based check |
+| datadog.systemProbe.kernelHeadersDownloadDir | string | `"/var/tmp/datadog-agent/system-probe/kernel-headers"` | Specify a directory for the system probe to download kernel headers for runtime compilation |
 | datadog.systemProbe.maxTrackedConnections | int | `131072` | the maximum number of tracked connections |
 | datadog.systemProbe.seccomp | string | `"localhost/system-probe"` | Apply an ad-hoc seccomp profile to the system-probe agent to restrict its privileges |
 | datadog.systemProbe.seccompRoot | string | `"/var/lib/kubelet/seccomp"` | Specify the seccomp profile root directory |

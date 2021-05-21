@@ -335,6 +335,9 @@ datadog:
     # datadog.systemProbe.enableRuntimeCompiler -- Enable runtime compilation of eBPF programs in the system probe
     enableRuntimeCompiler: false
 
+    # datadog.systemProbe.kernelHeadersDownloadDir -- Specify a directory for the system probe to download kernel headers for runtime compilation
+    kernelHeadersDownloadDir: /var/tmp/datadog-agent/system-probe/kernel-headers
+
     # datadog.systemProbe.collectDNSStats -- Enable DNS stat collection
     collectDNSStats: true
 

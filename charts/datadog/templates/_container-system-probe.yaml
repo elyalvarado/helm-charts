@@ -63,8 +63,8 @@
       readOnly: true
 {{- end }}
 {{- if .Values.datadog.systemProbe.enableRuntimeCompiler }}
-    - name: kernel-headers-dir
-      mountPath: /tmp/kernel-headers
+    - name: kernel-headers-download-dir
+      mountPath: {{ .Values.datadog.systemProbe.kernelHeadersDownloadDir }}
       readOnly: false
     - name: etc-os-release
       mountPath: /etc/os-release

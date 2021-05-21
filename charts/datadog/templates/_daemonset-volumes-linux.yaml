@@ -61,9 +61,9 @@
 {{- end }}
 {{- if .Values.datadog.systemProbe.enableRuntimeCompiler }}
 - hostPath:
-    path: /tmp/kernel-headers
+    path: {{ .Values.datadog.systemProbe.kernelHeadersDownloadDir }}
     type: DirectoryOrCreate
-  name: kernel-headers-dir
+  name: kernel-headers-download-dir
 - hostPath:
     path: /etc/os-release
   name: etc-os-release
