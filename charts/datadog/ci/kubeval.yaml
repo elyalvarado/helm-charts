@@ -22,7 +22,6 @@ datadog:
     enableTCPQueueLength: true
     enableOOMKill: true
     collectDNSStats: true
-    enableRuntimeCompiler: true
   orchestratorExplorer:
     enabled: true
   clusterChecks:
